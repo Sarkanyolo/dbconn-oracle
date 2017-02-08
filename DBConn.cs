@@ -14,10 +14,10 @@
 
             private void DBConnection() {
                 const string CONN = "Data Source={0}{1};Persist Security Info=True;User ID={2};Password={3};Unicode=True";
-				const string USER = "user";
+		const string USER = "user";
                 const string PASSWORD = "pass";
-				const string DBNAME = "odb";
-				const string ORGANIZATION = ".organization.gd"
+		const string DBNAME = "odb";
+		const string ORGANIZATION = ".organization.gd"
                 try {
                     if (OConn.State != ConnectionState.Open) {
                         OConn.ConnectionString = String.Format(CONN, DBNAME, String.Empty, USER, PASSWORD);
